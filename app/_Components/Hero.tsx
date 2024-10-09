@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
-import Heroimg from '@/public/hero.svg';
+import Heroimg from '@/public/Hero.svg';
 import { Button } from '@/components/ui/button';
 import { Icons } from '@/components/icons';
 

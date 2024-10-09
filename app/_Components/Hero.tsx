@@ -3,7 +3,6 @@ import React from 'react';
 import Heroimg from '@/public/hero.svg';
 import { Button } from '@/components/ui/button';
 import { Icons } from '@/components/icons';
-import { Divide } from 'lucide-react';
 
 const Hero = () => {
     return (

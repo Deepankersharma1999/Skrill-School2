@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
-import { Card, CardContent, CardHeader, CardFooter } from '@/components/ui/card';
+import { Card, CardContent, CardFooter } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 
@@ -184,7 +184,7 @@ const ClassesSection = () => {
 
 
             <div className="mt-40">
-                <Button variant="ghost" className='hover:bg-o hover:text-white bg-o rounded-full text-white py-6 px-5 font-normal' size="lg" onClick={handleShowMore}>
+                <Button className='hover:bg-o hover:text-white bg-o rounded-full text-white py-6 px-5 font-normal' onClick={handleShowMore}>
                     Show more classes
                 </Button>
             </div>

@@ -7,7 +7,7 @@ const Benifits = () => {
     return (
         <div>
             <div className='py-10'>
-                <div className="max-w-[1920px] mx-auto lg:mt-40 px-20">
+                <div className="max-w-[1920px] mx-auto lg:mt-40 lg:px-40 px-2">
                     <div className="flex justify-center ">
                         <Image
                             src="/up.svg"
@@ -19,25 +19,29 @@ const Benifits = () => {
                     </div>
 
                     <div className="text-center  mx-auto mt-10">
-                        <p className='lg:text-3xl font-semibold font-bricolage '>Benefits That You Can Feel Immediately</p>
+                        <p className='xl:text-5xl md:text-3xl  font-semibold font-bricolage '>Benefits That You Can Feel Immediately</p>
                         <p className='lg:text-xl fon  text-[#767676] mt-10'>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.<br /> Velit for official consequat enim to main purpose.</p>
                     </div>
 
 
 
-                    <div className="flex lg:flex-row flex-col justify-center gap-10 bg-[#361b0b] p-8 rounded-[50px] mt-20 w-full">
+                    <div className="flex lg:flex-row flex-col justify-center gap-10 bg-[#220D00] p-10 rounded-[50px] mt-20 w-full ">
                         <div className="p-10 w-full">
                             <p className='lg:text-5xl font-semibold text-white font-bricolage'>
                                 Ultimate Revision<br /> Course for JEE<br /> MAIN - <span className='text-o'>2025</span>
                             </p>
-                            <p className='lg:text-2xl font-bricolage text-[#767676] mt-10 max-w-xl'>
+                            <p className='lg:text-3xl  text-[#b8b7b7] mt-10 max-w-lg'>
                                 Revise Smarter, Score Higher with Expert mentors in Competishun JEE 2025 Made Easy
                             </p>
-                            <Button className='bg-o text-white lg:w-[200px] py-8 mt-5 text-xl rounded-xl border-white'>
-                                Join Now
-                            </Button>
+                            <div className="max-w-xl mt-10">
+                                <Button className='bg-o text-white py-8 mt-5 text-xl rounded-xl border-white w-full h-20'>
+                                    Join Now
+                                </Button>
+                            </div>
                         </div>
-                        <div className="p-5 w-full border bg-o px-7 py-4 rounded-[50px] max-w-full">
+
+
+                        <div className="p-10 w-full border bg-o px-7 py-4 rounded-[50px] max-w-full">
                             <Button className='bg-[#421900] p-5 py-8 rounded-lg font-semibold text-xl text-white mx-auto flex justify-center'>
                                 Course Fees
                             </Button>

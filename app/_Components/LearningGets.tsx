@@ -28,7 +28,7 @@ const LearningGets = () => {
 
     return (
         <div className='py-10'>
-            <div className="lg:max-w-[1920px] mx-auto px-20">
+            <div className="lg:max-w-[1920px] mx-auto lg:px-20">
                 <div className="flex justify-center lg:justify-start">
                     <Image
                         src="/up.svg"
@@ -39,22 +39,22 @@ const LearningGets = () => {
                     />
                 </div>
                 <div className="flex">
-                    <p className='lg:text-6xl font-semibold mt-5 lg:px-0 px-5'>Learning That Gets<br />You to the top</p>
+                    <p className='lg:text-5xl font-semibold mt-5 lg:px-0 px-5 font-bricolage'>Learning That Gets<br />You to the top</p>
                 </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-10 py-10lg:px-0 px-5">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-10 lg:px-0 px-5">
                     {cardData.map(card => (
-                        <Card key={card.id} className=' rounded-3xl flex flex-col justify-between border-[#c0c0c0] border-1.2 p-5'>
+                        <Card key={card.id} className=' rounded-3xl flex flex-col justify-between border-[#858585] border-[1px] p-2 shadow-none'>
                             <CardHeader>
-                                <div className="flex justify-between lg:gap-6 items-center">
-                                    <p className='lg:w-[320px]  font-semibold lg:text-2xl '>{card.title}</p>
-                                    <div className="cursor-pointer relative rounded-full bg-o h-8 w-8 flex items-center justify-center overflow-hidden transition-all duration-300 group">
-                                        <Icons.ArrowUpRightIcon size={15} className='text-white  absolute transition-transform duration-300 transform group-hover:translate-x-6 group-hover:translate-y-[-6px] opacity-100 group-hover:opacity-0' />
-                                        <Icons.ArrowUpRightIcon size={15} className='text-black  absolute transform translate-x-[-100%] translate-y-[100%] transition-transform duration-300 group-hover:translate-x-0 group-hover:translate-y-0' />
+                                <div className="flex justify-between lg:gap-6 items-center ">
+                                    <p className='lg:w-[320px]  font-semibold lg:text-2xl font-bricolage'>{card.title}</p>
+                                    <div className="cursor-pointer relative rounded-full bg-o lg:h-10 lg:w-10 flex items-center justify-center overflow-hidden transition-all duration-300 group">
+                                        <Icons.ArrowUpRightIcon size={15} className='text-white lg:h-5 lg:w-5  absolute transition-transform duration-300 transform group-hover:translate-x-6 group-hover:translate-y-[-6px] opacity-100 group-hover:opacity-0' />
+                                        <Icons.ArrowUpRightIcon size={15} className='text-black lg:h-5 lg:w-5  absolute transform translate-x-[-100%] translate-y-[100%] transition-transform duration-300 group-hover:translate-x-0 group-hover:translate-y-0' />
                                     </div>
                                 </div>
                             </CardHeader>
                             <CardContent className="flex-grow">
-                                <p className='text-[#5f5f5fda] text-sm lg:w-[220px]'>{card.description}</p>
+                                <p className='text-[#5f5f5fda] lg:text-lg text-sm lg:w-[250px] font-bricolage'>{card.description}</p>
                             </CardContent>
                             <CardFooter>
                                 <Image src={card.imageUrl} className='w-full bg-cover rounded-3xl border-[#f5f5f5] border-[2px]' width={1} height={1} alt='' />
@@ -64,29 +64,21 @@ const LearningGets = () => {
                 </div>
 
 
-
-                <div className="lg:max-w-[1920px] px-20 border-2 lg:rounded-full rounded-xl flex lg:flex-row flex-col justify-center lg:mx-auto lg:gap-40 py-14 mt-10  font-bricolage border-[#c0c0c0] border-1.2">
-                    <div className="text-center">
-                        <p className='lg:text-4xl text-l-o font-semibold font-bricolage'>50K+</p>
-                        <p className='font-thin text-lg'>Professionals Trained</p>
-                    </div>
-                    <div className="text-center">
-                        <p className='lg:text-4xl text-l-o font-semibold font-bricolage'>25+</p>
-                        <p className='font-thin text-md'>Years of Experience</p>
-                    </div>
-                    <div className="text-center">
-                        <p className='lg:text-4xl text-l-o font-semibold font-bricolage'>150+</p>
-                        <p className='font-thin text-md'>Training Sessions</p>
-                    </div>
-                    <div className="text-center">
-                        <p className='lg:text-4xl text-l-o font-semibold font-bricolage'>100+</p>
-                        <p className='font-thin text-md'>Industry Curriculum</p>
-                    </div>
-                    <div className="text-center">
-                        <p className='lg:text-4xl text-l-o font-semibold font-bricolage'>50000+</p>
-                        <p className='font-thin text-md'>Professionals Trained</p>
-                    </div>
+                <div className="lg:max-w-[1920px] px-20 mx-auto border-2 lg:rounded-full rounded-xl flex lg:flex-row flex-col justify-center lg:gap-20 py-14 mt-10 font-bricolage border-[#c0c0c0] border-1.2">
+                    {[
+                        { value: "50K+", label: "Professionals Trained" },
+                        { value: "25+", label: "Years of Experience" },
+                        { value: "150+", label: "Training Sessions" },
+                        { value: "100+", label: "Industry Curriculum" },
+                        { value: "50000+", label: "Professionals Trained" },
+                    ].map((item, index) => (
+                        <div className="text-center flex flex-col items-center justify-center w-full lg:w-1/5" key={index}>
+                            <p className='lg:text-4xl text-l-o font-semibold'>{item.value}</p>
+                            <p className='font-thin text-md'>{item.label}</p>
+                        </div>
+                    ))}
                 </div>
+
 
             </div>
         </div>

@@ -14,7 +14,7 @@ const AccordionItem = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <AccordionPrimitive.Item
     ref={ref}
-    className={cn("border-none", className)}
+    className={cn("border-none p-4", className)}
     {...props}
   />
 ))
@@ -45,8 +45,8 @@ const AccordionTrigger = React.forwardRef<
         {children}
         {
           isOpen
-            ? <MinusIcon className="text-[8px] transition-transform duration-100" />
-            : <PlusIcon className="text-[8px] transition-transform duration-100" />
+            ? <MinusIcon className="text-[8px] transition-transform duration-100 bg-white rounded-full" />
+            : <PlusIcon className="text-[8px] transition-transform duration-100 bg-white rounded-full" />
         }
       </AccordionPrimitive.Trigger>
     </AccordionPrimitive.Header>
@@ -64,7 +64,7 @@ const AccordionContent = React.forwardRef<
       ref={ref}
       className={cn(
         "overflow-hidden transition-all data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down",
-        "bg-orange-500 rounded-b-2xl p-5" // Background color and rounded corners for content
+        "bg-orange-500 rounded-b-2xl p-5"
       )}
       {...props}
     >

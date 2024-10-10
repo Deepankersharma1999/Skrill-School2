@@ -66,7 +66,7 @@ const Feedbacks = () => {
 
     return (
         <div className="overflow-x-hidden lg:max-w-[1920px] mx-auto">
-            <p className='py-20 lg:text-3xl text-center font-bricolage font-semibold'>Feedbackes</p>
+            <p className='py-20 xl:text-5xl md:text-3xl text-center font-bricolage font-semibold'>Feedbacks</p>
 
             {/* First Marquee */}
             <div className="flex">
@@ -87,13 +87,13 @@ const Feedbacks = () => {
                                     />
                                 </div>
                                 <div className="flex flex-col">
-                                    <h3 className="text-lg font-semibold">{user.name}</h3>
-                                    <p className="text-sm text-gray-500">{user.role}</p>
+                                    <h3 className="text-lg font-semibold font-bricolage">{user.name}</h3>
+                                    <p className="text-sm text-gray-500 font-bricolage">{user.role}</p>
                                 </div>
                             </CardHeader>
 
                             <CardContent className="mt-4">
-                                <p className="text-gray-700">{user.feedback}</p>
+                                <p className="text-gray-700 font-bricolage">{user.feedback}</p>
                             </CardContent>
 
                             <CardFooter className="mt-2">

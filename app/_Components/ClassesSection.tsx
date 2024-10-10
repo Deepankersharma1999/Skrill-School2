@@ -49,9 +49,6 @@ const classesData: Record<string, ClassData[]> = {
         { id: '3', title: "Advanced Data Structures: Trees and Graphs", image: "/opp2.svg", members: 100 },
     ],
 };
-
-
-
 const ClassesSection = () => {
     const [activeTab, setActiveTab] = useState<string>("Design");
     const [visibleCards, setVisibleCards] = useState<number>(3);
@@ -73,6 +70,7 @@ const ClassesSection = () => {
         if (activeTabRef.current && tabListRef.current) {
             const tabRect = activeTabRef.current.getBoundingClientRect();
             const listRect = tabListRef.current.getBoundingClientRect();
+            // Make sure the position and width calculations consider the scroll
             setActiveTabWidth(tabRect.width);
             setActiveTabPosition(tabRect.left - listRect.left + tabListRef.current.scrollLeft);
         }
@@ -94,8 +92,9 @@ const ClassesSection = () => {
             }
         };
     }, [activeTab]);
+
     return (
-        <section className="py-20 text-center lg:max-w-[1920px] mx-auto px-20">
+        <section className="py-20 text-center max-w-[1920px] mx-auto lg:px-20">
             <div className="flex justify-center lg:justify-center w-full mx-auto">
                 <Image
                     src="/up.svg"
@@ -105,18 +104,18 @@ const ClassesSection = () => {
                     className="h-10 w-10 lg:h-12 lg:w-12"
                 />
             </div>
-            <h2 className="text-5xl font-semibold mx-auto mt-10 font-bricolage">
+            <h2 className="lg:text-5xl font-semibold mx-auto mt-10 font-bricolage">
                 Train your team with real<br /> world skills and knowledge.
             </h2>
             <Tabs className="mt-10 relative" value={activeTab} onValueChange={handleTabChange}>
                 <TabsList
                     ref={tabListRef}
-                    className="bg-white lg:gap-20 flex lg:overflow-hidden overflow-x-auto mx-auto relative py-5 border-black z-2 p-10 text-black"
+                    className="bg-white flex lg:overflow-hidden overflow-x-auto mx-auto relative py-5 z-10 p-10 text-black w-full lg:gap-16 max-w-5xl"
                 >
                     {Object.keys(classesData).map((tab) => (
                         <TabsTrigger
                             ref={activeTab === tab ? activeTabRef : null}
-                            className={`lg:text-xl text-xs border-none relative ${activeTab === tab ? '' : ''}`}
+                            className={`lg:text-2xl text-xs font-medium relative ${activeTab === tab ? 'text-black' : 'text-black'}`}
                             key={tab}
                             value={tab}
                         >
@@ -125,23 +124,28 @@ const ClassesSection = () => {
                     ))}
                 </TabsList>
 
-                <div className="relative bottom-0 left-0 right-0 lg:h-[1px] h-auto w-full bg-black z-0">
-                    <div
-                        className="absolute h-[5px] bg-o transition-all duration-300 ease-in-out lg:flex hidden z-10 rounded-full mb-1"
-                        style={{
-                            width: `${activeTabWidth}px`,
-                            transform: `translateX(${activeTabPosition}px)`,
-                        }}
-                    />
+                <div className="relative mx-auto max-w-5xl">
+                    <div className="bg-black h-[2px] w-full absolute bottom-0 left-0 z-0 mx-auto lg:ms-8 ms-5" />
+                    <div className="relative bottom-0 left-0 right-0 h-[2px] bg-transparent flex mx-auto ">
+                        <div
+                            className="absolute h-[4px] mt-[-1px] bg-orange-500 transition-all duration-300 ease-in-out rounded-full"
+                            style={{
+                                width: `${activeTabWidth}px`,
+                                transform: `translateX(${activeTabPosition}px)`,
+                                zIndex: 11,
+                            }}
+                        />
+                    </div>
                 </div>
+
 
                 {Object.keys(classesData).map((tab) => (
                     <TabsContent key={tab} value={tab}>
-                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-10 py-10 lg:px-0 px-5 text-black">
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:gap-4 mt-10 py-10 lg:px-20 px-5 text-black">
                             {classesData[tab].slice(0, visibleCards).map((classItem) => (
                                 <Card
                                     key={classItem.id}
-                                    className="lg:w-[430px] flex flex-col mt-20 justify-between mx-auto border-none shadow-none h-full"
+                                    className="flex flex-col justify-between mt-20 mx-auto border-none shadow-none h-full max-w-[500px] w-full"
                                 >
                                     <Image
                                         src={classItem.image}
@@ -153,36 +157,20 @@ const ClassesSection = () => {
                                     <CardContent className="p-0 mt-4">
                                         <h3 className="text-xl font-semibold text-left font-bricolage">{classItem.title}</h3>
                                     </CardContent>
-                                    <CardFooter className="pr-4 pl-0 flex justify-between items-center mt-auto">
+                                    <CardFooter className="flex justify-between items-center mt-auto pr-4 pl-0">
                                         <div className="flex items-center gap-2">
                                             <div className="flex items-center -space-x-4">
-                                                <div className="w-10 h-10">
-                                                    <Image
-                                                        className="w-full h-full rounded-full border-2 border-black object-cover"
-                                                        src="/opp2.svg"
-                                                        alt="Profile 1"
-                                                        width={40}
-                                                        height={40}
-                                                    />
-                                                </div>
-                                                <div className="w-10 h-10">
-                                                    <Image
-                                                        className="w-full h-full rounded-full border-2 border-black object-cover"
-                                                        src="/opp2.svg"
-                                                        alt="Profile 2"
-                                                        width={40}
-                                                        height={40}
-                                                    />
-                                                </div>
-                                                <div className="w-10 h-10">
-                                                    <Image
-                                                        className="w-full h-full rounded-full border-2 border-black object-cover"
-                                                        src="/opp2.svg"
-                                                        alt="Profile 3"
-                                                        width={40}
-                                                        height={40}
-                                                    />
-                                                </div>
+                                                {[...Array(3)].map((_, index) => (
+                                                    <div key={index} className="w-10 h-10">
+                                                        <Image
+                                                            className="w-full h-full rounded-full border-2 border-black object-cover"
+                                                            src="/opp2.svg"
+                                                            alt={`Profile ${index + 1}`}
+                                                            width={40}
+                                                            height={40}
+                                                        />
+                                                    </div>
+                                                ))}
                                             </div>
                                             <span className="lg:text-sm text-xs font-semibold">+{classItem.members} members</span>
                                         </div>
@@ -194,6 +182,7 @@ const ClassesSection = () => {
                                         </a>
                                     </CardFooter>
                                 </Card>
+
                             ))}
                         </div>
                     </TabsContent>

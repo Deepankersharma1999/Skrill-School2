@@ -65,13 +65,17 @@ const Feedbacks = () => {
     ];
 
     return (
-        <div className="overflow-x-hidden max-w-7xl mx-auto">
+        <div className="overflow-x-hidden lg:max-w-[1920px] mx-auto">
             <p className='py-20 lg:text-3xl text-center font-bricolage font-semibold'>Feedbackes</p>
-            <div className="flex">
-                <Marquee speed={130}>
-                    {feedbackData.map((user) => (
 
-                        <Card key={user.id} className="mx-4 w-[350px]">
+            {/* First Marquee */}
+            <div className="flex">
+                <Marquee speed={10}>
+                    {feedbackData.map((user) => (
+                        <Card
+                            key={user.id}
+                            className="mx-4 w-[450px] bg-[#FFFAF7] border-none min-h-[300px] flex flex-col justify-between"
+                        >
                             <CardHeader className="flex flex-row items-center space-x-4">
                                 <div>
                                     <Image
@@ -82,20 +86,19 @@ const Feedbacks = () => {
                                         className="rounded-full object-cover h-10 w-10"
                                     />
                                 </div>
-
-
                                 <div className="flex flex-col">
                                     <h3 className="text-lg font-semibold">{user.name}</h3>
                                     <p className="text-sm text-gray-500">{user.role}</p>
                                 </div>
                             </CardHeader>
 
-                            <CardContent>
+                            <CardContent className="mt-4">
                                 <p className="text-gray-700">{user.feedback}</p>
                             </CardContent>
-                            <CardFooter>
+
+                            <CardFooter className="mt-2">
                                 <div className="flex justify-start">
-                                    <span className="text-yellow-500">★★★★★</span>
+                                    <span className="text-[#FFD88D]">★★★★★</span>
                                 </div>
                             </CardFooter>
                         </Card>
@@ -103,37 +106,37 @@ const Feedbacks = () => {
                 </Marquee>
             </div>
 
+            {/* Second Marquee */}
             <div className="flex">
-                <Marquee speed={130} direction='right'>
-
+                <Marquee speed={10} direction='right'>
                     {feedbackData.map((user) => (
-                        <Card key={user.id} className="mx-4 w-80 flex-shrink-0">
+                        <Card
+                            key={user.id}
+                            className="mx-4 w-[450px] flex-shrink-0 bg-[#FFFAF7] border-none min-h-[300px] flex flex-col justify-between mt-10"
+                        >
                             <CardHeader className="flex flex-row items-center space-x-4">
                                 <div>
-                                    <div>
-                                        <Image
-                                            src={user.image}
-                                            width={40}
-                                            height={40}
-                                            alt={user.name}
-                                            className="rounded-full object-cover h-10 w-10"
-                                        />
-                                    </div>
-
+                                    <Image
+                                        src={user.image}
+                                        width={40}
+                                        height={40}
+                                        alt={user.name}
+                                        className="rounded-full object-cover h-10 w-10"
+                                    />
                                 </div>
-
                                 <div className="flex flex-col">
                                     <h3 className="text-lg font-semibold">{user.name}</h3>
                                     <p className="text-sm text-gray-500">{user.role}</p>
                                 </div>
                             </CardHeader>
 
-                            <CardContent>
+                            <CardContent className="mt-4">
                                 <p className="text-gray-700">{user.feedback}</p>
                             </CardContent>
-                            <CardFooter>
+
+                            <CardFooter className="mt-2">
                                 <div className="flex justify-start">
-                                    <span className="text-yellow-500">★★★★★</span>
+                                    <span className="text-[#FFD88D]">★★★★★</span>
                                 </div>
                             </CardFooter>
                         </Card>
@@ -141,6 +144,7 @@ const Feedbacks = () => {
                 </Marquee>
             </div>
         </div>
+
     );
 };
 

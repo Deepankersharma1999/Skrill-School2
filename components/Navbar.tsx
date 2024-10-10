@@ -25,8 +25,8 @@ const Navbar = () => {
     };
 
     return (
-        <div className='bg-white fixed top-0 w-full z-50'>
-            <nav className='flex justify-between items-center px-5 md:px-20 py-4'>
+        <div className='bg-white fixed top-0 w-full z-50 '>
+            <nav className='flex justify-between items-center px-5 md:px-20 '>
                 <div className="flex md:justify-start w-full md:w-auto">
                     <Image src={Logo} className='w-28' width={64} height={64} alt='Logo' />
                 </div>
@@ -58,7 +58,7 @@ const Navbar = () => {
                 </div>
 
                 <div className="hidden md:block">
-                    <Button className='bg-white text-black font-normal px-6 py-5 rounded-full border-black border-[1px] shadow-none lg:text-xl'>
+                    <Button className='bg-white text-b font-semibold px-6 xl:py-6 lg:py-5 rounded-full border-[#789] border-[2px] shadow-none lg:text-xl'>
                         Register
                     </Button>
                 </div>

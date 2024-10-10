@@ -5,21 +5,19 @@ import { Icons } from './icons';
 
 const Footer = () => {
     return (
-        <footer className="bg-o text-white p-8 relative max-w-7xl rounded-2xl mx-auto mt-20 py-10 z-0">
+        <footer className="bg-o text-white relative border lg:max-w-[1350px] rounded-[50px] mx-auto mt-20 py-5 z-0 overflow-hidden">
+            <div
+                className="absolute top-[-160px] right-[-200px] w-[400px] h-[400px] bg-cover opacity-75"
+                style={{ backgroundImage: "url('/footer.svg')" }}
+            ></div>
 
             <div
-                className="absolute top-[-100px] right-[-100px] w-[400px] h-[400px] bg-cover opacity-30"
+                className="absolute bottom-[-130px] left-[-100px] w-[300px] h-[300px] bg-cover opacity-30 z-5 rotate-180"
                 style={{ backgroundImage: "url('/footer.svg')" }}
-            >
-            </div>
+            ></div>
 
-            <div
-                className="absolute bottom-0 left-0 w-[100px] h-[100px] bg-cover opacity-30"
-                style={{ backgroundImage: "url('/footer.svg')" }}
-            >
-            </div>
+            <div className="text-center mb-8 lg:max-w-xl mx-auto bg-orange-500 px-5 py-10 rounded-[50px]" style={{ backgroundImage: "url('/jali.svg')" }}>
 
-            <div className="text-center mb-8 lg:max-w-xl mx-auto bg-orange-500 px-5 py-10 rounded-xl">
                 <h2 className="text-3xl font-bold mb-4">Ready to use Meetbot?</h2>
                 <p className="mt-10 text-xs font-thin text-opacity-25 text-center">Subscribe to read our unique perspective on all things user<br />
                     research and product feedback.</p>
@@ -29,7 +27,7 @@ const Footer = () => {
                 </div>
             </div>
 
-            <div className=" mx-auto flex flex-col lg:flex-row justify-between max-w-6xl items-center  mt-20 z-10">
+            <div className=" mx-auto flex flex-col lg:flex-row justify-between max-w-6xl items-center  mt-10 z-10">
                 <div className="flex flex-col gap-5 justify-center bg-orange-500 px-5 py-16 rounded-xl">
                     <h3 className="font-bold mb-4 lg:text-3xl">Before you go check<br /> these links</h3>
 
@@ -81,3 +79,4 @@ const Footer = () => {
 };
 
 export default Footer;
+

@@ -31,7 +31,7 @@ const Hero = () => {
                         programming skills and technologies.
                     </p>
 
-                    <Button className="lg:mt-5 mt-5 lg:text-lg mx-auto flex justify-center bg-o rounded-full lg:py-6 lg:px-6 font-medium text-white text-xs">
+                    <Button className="lg:mt-5 mt-5 lg:text-lg mx-auto flex justify-center bg-o hover:bg-orange-500 rounded-full lg:py-6 lg:px-6 font-medium text-white text-xs">
                         Enroll Now
                         <Icons.ChevronRight className="ml-2" size={17} />
                     </Button>

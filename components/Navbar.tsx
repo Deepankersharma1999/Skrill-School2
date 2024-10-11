@@ -75,7 +75,7 @@ const Navbar: React.FC = () => {
                 </div>
 
                 <div className="hidden md:block">
-                    <Button className='bg-white text-[#311100] font-semibold px-6 xl:py-6 lg:py-5 rounded-full border-[#789] border-[2px] shadow-none lg:text-xl'>
+                    <Button className='bg-white hover:bg-white text-[#311100] font-semibold px-6 xl:py-6 lg:py-5 rounded-full border-[#789] border-[2px] shadow-none lg:text-xl'>
                         Register
                     </Button>
                 </div>

@@ -29,9 +29,12 @@ const HowItWork = () => {
         },
     ];
 
-    const handleCardClick = (index: number) => {
-        // If the clicked card is already open, set to null; otherwise, open the clicked card
-        setOpenCardIndex(openCardIndex === index ? null : index);
+    const handleCardHover = (index: number) => {
+        setOpenCardIndex(index); // Open the hovered card
+    };
+
+    const handleCardLeave = () => {
+        setOpenCardIndex(0); // Revert back to the first card when no card is hovered
     };
 
     return (
@@ -40,14 +43,14 @@ const HowItWork = () => {
                 How It Works?
             </p>
 
-            <div className="flex flex-col lg:flex-row justify-center lg:mt-20 w-full mx-auto gap-4 mt-10 overflow-hidden ">
-
+            <div className="flex flex-col lg:flex-row justify-center lg:mt-20 w-full mx-auto gap-4 mt-10 overflow-hidden">
                 {courses.map((course, index) => (
                     <div
                         key={course.id}
-                        onClick={() => handleCardClick(index)}
-                        className={`p-5 px-2 py-2 rounded-2xl flex flex-col lg:flex-row relative gap-4 lg:gap-10 transition-all duration-500 ease-in-out 
-                            ${openCardIndex === index ? "lg:w-[890px] bg-o" : "lg:w-[200px] bg-[#F0F0F0]"} text-white overflow-hidden cursor-pointer`}
+                        onMouseEnter={() => handleCardHover(index)}
+                        onMouseLeave={handleCardLeave}
+                        className={`p-5 px-2 py-2 rounded-2xl flex flex-col lg:flex-row relative gap-4 lg:gap-10 transition-all duration-700 ease-[cubic-bezier(0.68, -0.55, 0.27, 1.55)] 
+                            ${openCardIndex === index ? "lg:w-[890px] bg-o " : "lg:w-[200px] bg-[#F0F0F0] scale-100"} text-white overflow-hidden cursor-pointer`}
                     >
                         <div className="flex-1 flex flex-col justify-between p-4">
                             <div>
@@ -60,7 +63,7 @@ const HowItWork = () => {
                                 </div>
                             )}
                         </div>
-                        <div className="relative bg-white  w-full lg:w-[300px] rounded-2xl flex justify-center items-end overflow-hidden">
+                        <div className="relative bg-white w-full lg:w-[300px] rounded-2xl flex justify-center items-end overflow-hidden">
                             <Image
                                 src={myImage}
                                 alt="Descriptive Alt Text"

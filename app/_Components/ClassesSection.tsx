@@ -94,7 +94,7 @@ const ClassesSection = () => {
     }, [activeTab]);
 
     return (
-        <section className="py-16 text-center max-w-[1920px] mx-auto lg:px-20">
+        <section className="text-center max-w-[1920px] mx-auto lg:px-20">
             <div className="flex justify-center lg:justify-center w-full mx-auto">
                 <Image
                     src="/up.svg"
@@ -110,7 +110,7 @@ const ClassesSection = () => {
             <Tabs className="mt-10 relative" value={activeTab} onValueChange={handleTabChange}>
                 <TabsList
                     ref={tabListRef}
-                    className="bg-white flex lg:overflow-hidden overflow-x-auto mx-auto relative py-5 z-10 p-10 text-black w-full lg:gap-16 max-w-5xl"
+                    className="bg-white flex lg:overflow-hidden overflow-x-auto mx-auto relative py-5 z-10 p-10 text-black w-full lg:gap-16 max-w-5xl "
                 >
                     {Object.keys(classesData).map((tab) => (
                         <TabsTrigger
@@ -126,9 +126,9 @@ const ClassesSection = () => {
 
                 <div className="relative mx-auto max-w-5xl">
                     <div className="bg-black h-[2px] w-full absolute bottom-0 left-0 z-0 mx-auto lg:ms-8 ms-5" />
-                    <div className="relative bottom-0 left-0 right-0 h-[2px] bg-transparent flex mx-auto ">
+                    <div className="relative bottom-0 left-[-5px] w-full h-[2px] bg-transparent flex mx-auto ">
                         <div
-                            className="absolute h-[4px] mt-[-1px] bg-orange-500 transition-all duration-300 ease-in-out rounded-full"
+                            className="absolute h-[5px] mt-[-1px] bg-orange-500 transition-all duration-300 ease-in-out rounded-full"
                             style={{
                                 width: `${activeTabWidth}px`,
                                 transform: `translateX(${activeTabPosition}px)`,

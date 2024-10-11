@@ -43,23 +43,39 @@ const LearningGets = () => {
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-10 lg:px-0 px-5">
                     {cardData.map(card => (
-                        <Card key={card.id} className=' rounded-3xl flex flex-col justify-between border-[#858585] border-[1px] p-2 shadow-none'>
+                        <Card key={card.id} className="rounded-3xl flex flex-col justify-between border-[#858585] border-[1px] p-2 shadow-none">
                             <CardHeader>
-                                <div className="flex justify-between lg:gap-6 items-center ">
-                                    <p className='lg:w-[320px]  font-semibold lg:text-2xl font-bricolage'>{card.title}</p>
-                                    <div className="cursor-pointer relative rounded-full bg-o lg:h-10 lg:w-10 flex items-center justify-center overflow-hidden transition-all duration-300 group">
-                                        <Icons.ArrowUpRightIcon size={15} className='text-white lg:h-5 lg:w-5  absolute transition-transform duration-300 transform group-hover:translate-x-6 group-hover:translate-y-[-6px] opacity-100 group-hover:opacity-0' />
-                                        <Icons.ArrowUpRightIcon size={15} className='text-black lg:h-5 lg:w-5  absolute transform translate-x-[-100%] translate-y-[100%] transition-transform duration-300 group-hover:translate-x-0 group-hover:translate-y-0' />
+                                <div className="flex justify-between lg:gap-6 items-center">
+                                    <p className="font-semibold lg:text-lg text-base font-bricolage">
+                                        {card.title}
+                                    </p>
+                                    <div className="div">
+                                        <div className="cursor-pointer relative rounded-full bg-o lg:h-8 lg:w-8 h-6 w-6 flex items-center justify-center overflow-hidden transition-all duration-300 group">
+                                            <Icons.ArrowUpRightIcon size={15} className="text-white lg:h-5 lg:w-5 h-4 w-4 absolute transition-transform duration-300 transform group-hover:translate-x-6 group-hover:translate-y-[-6px] opacity-100 group-hover:opacity-0" />
+                                            <Icons.ArrowUpRightIcon size={15} className="text-black lg:h-5 lg:w-5 h-4 w-4 absolute transform translate-x-[-100%] translate-y-[100%] transition-transform duration-300 group-hover:translate-x-0 group-hover:translate-y-0"
+                                            />
+                                        </div>
                                     </div>
                                 </div>
                             </CardHeader>
+
                             <CardContent className="flex-grow">
-                                <p className='text-[#5f5f5fda] lg:text-lg text-sm lg:w-[250px] font-bricolage'>{card.description}</p>
+                                <p className="text-[#5f5f5fda] lg:text-lg text-sm lg:w-[250px] font-bricolage">
+                                    {card.description}
+                                </p>
                             </CardContent>
+
                             <CardFooter>
-                                <Image src={card.imageUrl} className='w-full bg-cover rounded-3xl border-[#f5f5f5] border-[2px]' width={1} height={1} alt='' />
+                                <Image
+                                    src={card.imageUrl}
+                                    className="w-full bg-cover rounded-3xl border-[#f5f5f5] border-[2px] object-cover"
+                                    width={500}
+                                    height={300}
+                                    alt=""
+                                />
                             </CardFooter>
                         </Card>
+
                     ))}
                 </div>
 
@@ -74,7 +90,7 @@ const LearningGets = () => {
                     ].map((item, index) => (
                         <div className="text-center flex flex-col items-center justify-center w-full lg:w-1/5" key={index}>
                             <p className='lg:text-4xl text-l-o font-semibold'>{item.value}</p>
-                            <p className='font-thin text-md'>{item.label}</p>
+                            <p className='font-thin lg:text-xs'>{item.label}</p>
                         </div>
                     ))}
                 </div>

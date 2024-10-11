@@ -42,7 +42,7 @@ const Navbar: React.FC = () => {
     }, [isMobileMenuOpen, handleClickOutside]);
 
     return (
-        <div className='bg-white fixed top-0 w-full z-50 py-8'>
+        <div className='bg-white fixed top-0 w-full z-50 py-5'>
             <nav ref={mobileMenuRef} className='flex justify-between items-center px-5 md:px-20 '>
                 <div className="flex md:justify-start w-full md:w-auto">
                     <Image src={Logo} className='w-28' width={64} height={64} alt='Logo' />

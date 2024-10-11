@@ -94,8 +94,9 @@ const ClassesSection = () => {
     }, [activeTab]);
 
     return (
-        <section className="text-center max-w-[1920px] mx-auto lg:px-20">
-            <div className="flex justify-center lg:justify-center w-full mx-auto">
+        <section className="text-center max-w-[1920px] mx-auto lg:px-20 px-5">
+            {/* Title Section */}
+            <div className="flex justify-center w-full mx-auto">
                 <Image
                     src="/up.svg"
                     alt="Opportunity Image"
@@ -104,18 +105,20 @@ const ClassesSection = () => {
                     className="h-10 w-10 lg:h-12 lg:w-12"
                 />
             </div>
-            <h2 className="lg:text-5xl font-semibold mx-auto mt-10 font-bricolage">
+            <h2 className="xl:text-5xl lg:text-2xl text-lg font-semibold mx-auto mt-10 font-bricolage">
                 Train your team with real<br /> world skills and knowledge.
             </h2>
+
+            {/* Tabs Section */}
             <Tabs className="mt-10 relative" value={activeTab} onValueChange={handleTabChange}>
                 <TabsList
                     ref={tabListRef}
-                    className="bg-white flex lg:overflow-hidden overflow-x-auto mx-auto relative py-5 z-10 p-10 text-black w-full lg:gap-16 max-w-5xl "
+                    className="bg-white flex lg:overflow-hidden overflow-x-auto mx-auto relative py-5 z-10 text-black w-full lg:gap-16 gap-4 max-w-5xl"
                 >
                     {Object.keys(classesData).map((tab) => (
                         <TabsTrigger
                             ref={activeTab === tab ? activeTabRef : null}
-                            className={`lg:text-2xl text-xs font-medium relative ${activeTab === tab ? 'text-black' : 'text-black'}`}
+                            className={`xl:text-2xl text-sm font-medium relative ${activeTab === tab ? 'text-black' : 'text-black'}`}
                             key={tab}
                             value={tab}
                         >
@@ -124,9 +127,10 @@ const ClassesSection = () => {
                     ))}
                 </TabsList>
 
+                {/* Active Tab Indicator */}
                 <div className="relative mx-auto max-w-5xl">
-                    <div className="bg-black h-[2px] w-full absolute bottom-0 left-0 z-0 mx-auto lg:ms-8 ms-5" />
-                    <div className="relative bottom-0 left-[-5px] w-full h-[2px] bg-transparent flex mx-auto ">
+                    <div className="bg-black h-[2px] w-full absolute bottom-0 left-0 z-0 mx-auto xl:ms-8 lg:ms-10 ms-5" />
+                    <div className="relative bottom-0 left-[-5px] w-full h-[2px] bg-transparent flex mx-auto">
                         <div
                             className="absolute h-[5px] mt-[-1px] bg-orange-500 transition-all duration-300 ease-in-out rounded-full"
                             style={{
@@ -138,14 +142,14 @@ const ClassesSection = () => {
                     </div>
                 </div>
 
-
+                {/* Tab Contents */}
                 {Object.keys(classesData).map((tab) => (
                     <TabsContent key={tab} value={tab}>
-                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:gap-4 mt-10 py-10 lg:px-20 px-5 text-black">
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:gap-4 gap-8 mt-10 py-10 lg:px-0 px-5 text-black">
                             {classesData[tab].slice(0, visibleCards).map((classItem) => (
                                 <Card
                                     key={classItem.id}
-                                    className="flex flex-col justify-between mt-20 mx-auto border-none shadow-none h-full max-w-[500px] w-full"
+                                    className="flex flex-col justify-between mx-auto border-none shadow-none h-full max-w-[500px] w-full"
                                 >
                                     <Image
                                         src={classItem.image}
@@ -155,7 +159,7 @@ const ClassesSection = () => {
                                         className="w-full bg-cover rounded-3xl border-[#f5f5f5] border-[2px]"
                                     />
                                     <CardContent className="p-0 mt-4">
-                                        <h3 className="text-xl font-semibold text-left font-bricolage">{classItem.title}</h3>
+                                        <h3 className="xl:text-xl lg:text-lg font-semibold text-left font-bricolage">{classItem.title}</h3>
                                     </CardContent>
                                     <CardFooter className="flex justify-between items-center mt-auto pr-4 pl-0">
                                         <div className="flex items-center gap-2">
@@ -172,29 +176,33 @@ const ClassesSection = () => {
                                                     </div>
                                                 ))}
                                             </div>
-                                            <span className="lg:text-sm text-xs font-semibold">+{classItem.members} members</span>
+                                            <span className="xl:text-lg lg:text-[10px] font-semibold">+{classItem.members} members</span>
                                         </div>
                                         <a
                                             href={`/classes/${classItem.id}`}
-                                            className="text-[#C99E98] underline lg:text-lg text-xs font-bricolage"
+                                            className="text-[#C99E98] underline xl:text-lg lg:text-xs font-bricolage"
                                         >
                                             Join class
                                         </a>
                                     </CardFooter>
                                 </Card>
-
                             ))}
                         </div>
                     </TabsContent>
                 ))}
             </Tabs>
 
-            <div className="mt-40">
-                <Button className="hover:bg-o hover:text-white bg-o rounded-full text-white py-6 px-5 font-normal lg:text-lg" onClick={handleShowMore}>
+            {/* Show More Button */}
+            <div className="mt-20 ">
+                <Button
+                    className="hover:bg-o hover:text-white bg-o rounded-full text-white py-6 px-5 font-normal lg:text-lg text-sm"
+                    onClick={handleShowMore}
+                >
                     Show more classes
                 </Button>
             </div>
         </section>
+
     );
 };
 

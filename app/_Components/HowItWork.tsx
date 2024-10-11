@@ -30,11 +30,11 @@ const HowItWork = () => {
     ];
 
     const handleCardHover = (index: number) => {
-        setOpenCardIndex(index); // Open the hovered card
+        setOpenCardIndex(index);
     };
 
     const handleCardLeave = () => {
-        setOpenCardIndex(0); // Revert back to the first card when no card is hovered
+        setOpenCardIndex(0);
     };
 
     return (
@@ -50,19 +50,20 @@ const HowItWork = () => {
                         onMouseEnter={() => handleCardHover(index)}
                         onMouseLeave={handleCardLeave}
                         className={`p-5 px-2 py-2 rounded-2xl flex flex-col lg:flex-row relative gap-4 lg:gap-10 transition-all duration-700 ease-[cubic-bezier(0.68, -0.55, 0.27, 1.55)] 
-                            ${openCardIndex === index ? "lg:w-[890px] bg-o " : "lg:w-[200px] bg-[#F0F0F0] scale-100"} text-white overflow-hidden cursor-pointer`}
+                            ${openCardIndex === index ? "xl:w-[920px] bg-o " : "lg:w-[150px] bg-[#F0F0F0]"} text-white overflow-hidden cursor-pointer`}
                     >
                         <div className="flex-1 flex flex-col justify-between p-4">
                             <div>
-                                <h2 className={`font-thin ${openCardIndex === index ? 'text-white' : 'text-black'}`}>{`Chap 0${course.id}`}</h2>
-                                <h3 className={`lg:text-3xl mt-8 font-sans ${openCardIndex === index ? 'text-white' : 'text-black'}`}>{course.title}</h3>
+                                <h2 className={`font-thin ${openCardIndex === index ? 'text-white' : 'text-black text-xs'}`}>{`Chap 0${course.id}`}</h2>
+                                <h3 className={`lg:text-xl mt-5  ${openCardIndex === index ? 'text-white' : 'text-black'}`}>{course.title}</h3>
                             </div>
                             {openCardIndex === index && (
-                                <div className="mt-auto lg:text- font-bricolage font-thin">
-                                    <p className="text-white">{course.description}</p> {/* Description is always white when open */}
+                                <div className="mt-auto lg:text-lg font-bricolage font-thin">
+                                    <p className="text-white]">{course.description}</p> {/* Description is always white when open */}
                                 </div>
                             )}
                         </div>
+
                         <div className="relative bg-white w-full lg:w-[300px] rounded-2xl flex justify-center items-end overflow-hidden">
                             <Image
                                 src={myImage}

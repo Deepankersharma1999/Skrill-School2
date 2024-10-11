@@ -5,7 +5,7 @@ import { Icons } from './icons';
 
 const Footer = () => {
     return (
-        <footer className="bg-o text-white relative lg:px-20 px-5 max-w-[1500px] rounded-[50px] mx-auto mt-20 py-10 z-0 overflow-hidden">
+        <footer className="bg-o text-white relative lg:px-20 px-5 max-w-[1270px]  rounded-[50px] mx-auto mt-20 py-20 z-0 overflow-hidden">
             <div
                 className="absolute top-[-160px] right-[-200px] lg:w-[400px] h-[400px] bg-cover opacity-75"
                 style={{ backgroundImage: "url('/footer.svg')" }}

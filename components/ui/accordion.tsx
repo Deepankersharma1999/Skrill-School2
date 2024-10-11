@@ -14,7 +14,7 @@ const AccordionItem = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <AccordionPrimitive.Item
     ref={ref}
-    className={cn("border-none p-4", className)}
+    className={cn("rounded-2xl", className)}
     {...props}
   />
 ))
@@ -31,12 +31,12 @@ const AccordionTrigger = React.forwardRef<
   };
 
   return (
-    <AccordionPrimitive.Header className="flex">
+    <AccordionPrimitive.Header className="flex rounded-t-2xl">
       <AccordionPrimitive.Trigger
         ref={ref}
         className={cn(
-          "flex flex-1 items-center justify-between py-4 transition-all ",
-          isOpen ? "bg-orange-500 rounded-t-2xl p-5" : "p-4", // Only the top rounded when open
+          "flex flex-1 items-center justify-between py-4 px-5 transition-all rounded-t-2xl [&[data-state=open]>svg]:rotate-180",
+          isOpen ? "bg-orange-500 text-white" : "text-black",
           className
         )}
         {...props}
@@ -45,8 +45,8 @@ const AccordionTrigger = React.forwardRef<
         {children}
         {
           isOpen
-            ? <MinusIcon className="text-[8px] transition-transform duration-100 bg-white rounded-full" />
-            : <PlusIcon className="text-[8px] transition-transform duration-100 bg-white rounded-full" />
+            ? <MinusIcon className="bg-white text-black rounded-full lg:text-[48px] transition-transform duration-200" />
+            : <PlusIcon className="bg-white text-black rounded-full lg:text-[48px] transition-transform duration-200" />
         }
       </AccordionPrimitive.Trigger>
     </AccordionPrimitive.Header>
@@ -58,20 +58,15 @@ AccordionTrigger.displayName = AccordionPrimitive.Trigger.displayName
 const AccordionContent = React.forwardRef<
   React.ElementRef<typeof AccordionPrimitive.Content>,
   React.ComponentPropsWithoutRef<typeof AccordionPrimitive.Content>
->(({ className, children, ...props }, ref) => {
-  return (
-    <AccordionPrimitive.Content
-      ref={ref}
-      className={cn(
-        "overflow-hidden transition-all data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down",
-        "bg-orange-500 rounded-b-2xl p-5"
-      )}
-      {...props}
-    >
-      <div className={cn(className)}>{children}</div>
-    </AccordionPrimitive.Content>
-  )
-})
+>(({ className, children, ...props }, ref) => (
+  <AccordionPrimitive.Content
+    ref={ref}
+    className="overflow-hidden transition-all data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down bg-orange-500 text-white rounded-b-2xl px-5" // Added rounded-full here
+    {...props}
+  >
+    <div className={cn(className)}>{children}</div>
+  </AccordionPrimitive.Content>
+))
 
 AccordionContent.displayName = AccordionPrimitive.Content.displayName
 

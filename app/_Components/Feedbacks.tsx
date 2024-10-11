@@ -74,7 +74,7 @@ const Feedbacks = () => {
                     {feedbackData.map((user) => (
                         <Card
                             key={user.id}
-                            className="mx-4 w-[450px] bg-[#FFFAF7] border-none min-h-[300px] flex flex-col justify-between"
+                            className="mx-4 w-[450px] bg-[#FFFAF7] border-none min-h-[300px] flex flex-col justify-between rounded-[25px]"
                         >
                             <CardHeader className="flex flex-row items-center space-x-4">
                                 <div>
@@ -112,7 +112,7 @@ const Feedbacks = () => {
                     {feedbackData.map((user) => (
                         <Card
                             key={user.id}
-                            className="mx-4 w-[450px] flex-shrink-0 bg-[#FFFAF7] border-none min-h-[300px] flex flex-col justify-between mt-10"
+                            className="mx-4 w-[450px] flex-shrink-0 bg-[#FFFAF7] border-none min-h-[300px] flex flex-col justify-between mt-10 rounded-[25px]"
                         >
                             <CardHeader className="flex flex-row items-center space-x-4">
                                 <div>

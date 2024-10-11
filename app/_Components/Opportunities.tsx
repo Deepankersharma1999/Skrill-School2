@@ -5,8 +5,8 @@ const Opportunities = () => {
     return (
         <div className="bg-[#FFF6F2] w-auto relative top-[-100px] z-40 py-10 lg:mt-0 mt-40">
 
-            <div className=" flex flex-col justify-between items-center mx-auto xl:px-20 px-10 py-8 lg:py-16 lg:mt-[-100px] mt-5">
-                <div className=" flex flex-col lg:flex-row  mt-10 gap-60 ">
+            <div className=" flex flex-col justify-between items-center mx-auto xl:px-20 px-10 py-8 lg:py-40 lg:mt-[-100px] mt-5">
+                <div className=" flex flex-col lg:flex-row  gap-60 ">
 
                     {/* left section */}
 

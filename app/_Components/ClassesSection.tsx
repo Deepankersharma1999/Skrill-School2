@@ -94,7 +94,7 @@ const ClassesSection = () => {
     }, [activeTab]);
 
     return (
-        <section className="py-20 text-center max-w-[1920px] mx-auto lg:px-20">
+        <section className="py-16 text-center max-w-[1920px] mx-auto lg:px-20">
             <div className="flex justify-center lg:justify-center w-full mx-auto">
                 <Image
                     src="/up.svg"

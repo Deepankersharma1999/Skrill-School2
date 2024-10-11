@@ -23,29 +23,29 @@ const Faq = () => {
                     </Accordion>
                     <Accordion className=' rounded-2xl font-bricolage mt-5  border-[#3E100B] border-[1px] border-opacity-55' type="single" collapsible>
                         <AccordionItem value="item-1">
-                            <AccordionTrigger className='text-b lg:text-2xl text-sm font-semibold'>How can Vertigo benefit my business?</AccordionTrigger>
-                            <AccordionContent className='text-b text-xl bg-[FFB489]'>
+                            <AccordionTrigger className=' lg:text-2xl text-sm font-semibold'>How can Vertigo benefit my business?</AccordionTrigger>
+                            <AccordionContent className=' text-xl bg-[FFB489]'>
                                 Our user-friendly dashboard provides a clear overview of your business operations, allowing you to monitor important metrics and track progress in real-time. Streamline your project workflows with powerful task management features. Assign tasks, set deadlines.                             </AccordionContent>
                         </AccordionItem>
                     </Accordion>
                     <Accordion className=' rounded-2xl font-bricolage  mt-5  border-[#3E100B] border-[1px] border-opacity-55' type="single" collapsible>
                         <AccordionItem value="item-1">
-                            <AccordionTrigger className='text-b lg:text-2xl text-sm font-semibold'>Is Vertigo suitable for businesses of all sizes?</AccordionTrigger>
-                            <AccordionContent className='text-b text-xl bg-[FFB489]'>
+                            <AccordionTrigger className=' lg:text-2xl text-sm font-semibold'>Is Vertigo suitable for businesses of all sizes?</AccordionTrigger>
+                            <AccordionContent className=' text-xl bg-[FFB489]'>
                                 Our user-friendly dashboard provides a clear overview of your business operations, allowing you to monitor important metrics and track progress in real-time. Streamline your project workflows with powerful task management features. Assign tasks, set deadlines.                             </AccordionContent>
                         </AccordionItem>
                     </Accordion>
                     <Accordion className=' rounded-2xl font-bricolage mt-5  border-[#3E100B] border-[1px] border-opacity-55' type="single" collapsible>
                         <AccordionItem value="item-1">
-                            <AccordionTrigger className='text-b lg:text-2xl text-sm font-semibold'>Can I integrate Vertigo with other tools we use?</AccordionTrigger>
-                            <AccordionContent className='text-b text-xl bg-[FFB489]'>
+                            <AccordionTrigger className=' lg:text-2xl text-sm font-semibold'>Can I integrate Vertigo with other tools we use?</AccordionTrigger>
+                            <AccordionContent className=' text-xl bg-[FFB489]'>
                                 Our user-friendly dashboard provides a clear overview of your business operations, allowing you to monitor important metrics and track progress in real-time. Streamline your project workflows with powerful task management features. Assign tasks, set deadlines.                             </AccordionContent>
                         </AccordionItem>
                     </Accordion>
                     <Accordion className=' rounded-2xl font-bricolage  mt-5  border-[#3E100B] border-[1px] border-opacity-55' type="single" collapsible>
                         <AccordionItem value="item-1">
-                            <AccordionTrigger className='text-b lg:text-2xl text-sm font-semibold'>Is my data secure with Vertigo?</AccordionTrigger>
-                            <AccordionContent className='text-b text-xl bg-[FFB489]'>
+                            <AccordionTrigger className=' lg:text-2xl text-sm font-semibold'>Is my data secure with Vertigo?</AccordionTrigger>
+                            <AccordionContent className=' text-xl bg-[FFB489]'>
                                 Our user-friendly dashboard provides a clear overview of your business operations, allowing you to monitor important metrics and track progress in real-time. Streamline your project workflows with powerful task management features. Assign tasks, set deadlines.                             </AccordionContent>
                         </AccordionItem>
                     </Accordion>

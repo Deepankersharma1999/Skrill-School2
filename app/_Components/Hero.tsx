@@ -6,7 +6,7 @@ import { Icons } from '@/components/icons';
 
 const Hero = () => {
     return (
-        <div className="relative h-auto lg:mt-[-50px]  lg:mb-[-50px] z-10  lg:max-w-[1920px] mx-auto">
+        <div className="relative h-auto xl:mt-[-50px] mt-10  lg:mb-[-50px] z-10  lg:max-w-[1920px] mx-auto">
             <div className="flex justify-center items-center mx-auto">
                 <div className="w-full lg:w-[80%]"> {/* Adjusted image container width */}
                     <Image
@@ -31,10 +31,11 @@ const Hero = () => {
                         programming skills and technologies.
                     </p>
 
-                    <Button className="lg:mt-5 mt-5 lg:text-lg mx-auto flex justify-center bg-o hover:bg-orange-500 rounded-full lg:py-6 lg:px-6 font-medium text-white text-xs">
+                    <Button className="mt-5 mx-auto flex justify-center bg-o hover:bg-o rounded-full text-white font-medium text-[8px] sm:text-base lg:text-lg xl:py-7 xl:px-5  px-5 ">
                         Enroll Now
-                        <Icons.ChevronRight className='ms-4' size={17} />
+                        <Icons.ChevronRight className='xl:ms-2 text-[5px]' size={15} />
                     </Button>
+
                 </div>
             </div>
         </div>

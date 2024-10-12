@@ -57,7 +57,7 @@ const Navbar: React.FC = () => {
 
                 <div className="hidden md:flex items-center gap-10 text-black lg:text-xl">
                     <Select>
-                        <SelectTrigger className="flex gap-0 lg:text-xl">
+                        <SelectTrigger className="flex gap-0 xl:text-xl lg:text-md text-sm">
                             <SelectValue placeholder="Programs" />
                         </SelectTrigger>
                         <SelectContent>

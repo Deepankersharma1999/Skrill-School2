@@ -28,7 +28,7 @@ const classesData: Record<string, ClassData[]> = {
         { id: '2', title: "Marketing: Strategies for Digital Success", image: "/class2.svg", members: 90 },
         { id: '3', title: "Financial Analysis: Understanding Financial Statements", image: "/class3.svg", members: 110 },
     ],
-    AIML: [
+    AI_ML: [
         { id: '1', title: "AI/ML: Understanding Machine Learning and AI Concepts", image: "/opp2.svg", members: 200 },
         { id: '2', title: "Data Mining: Techniques for Extracting Information", image: "/opp2.svg", members: 160 },
         { id: '3', title: "Deep Learning: Neural Networks in Action", image: "/opp2.svg", members: 180 },
@@ -128,7 +128,7 @@ const ClassesSection = () => {
                 </TabsList>
 
                 {/* Active Tab Indicator */}
-                <div className="relative mx-auto max-w-5xl">
+                <div className="relative mx-auto max-w-5xl xl:flex lg:flex hidden">
                     <div className="bg-[#7e7e7e] h-[1px] w-full absolute bottom-0 left-0 z-0 mx-auto xl:ms-8 lg:ms-10 ms-5" />
                     <div className="relative bottom-0 left-[-5px] w-full h-[2px] bg-transparent flex mx-auto">
                         <div

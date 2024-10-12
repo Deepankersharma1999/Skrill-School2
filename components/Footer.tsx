@@ -34,7 +34,7 @@ const Footer = () => {
                     <div className="flex flex-col gap-5 justify-center bg-orange-500 p-5 rounded-[25px] w-full lg:w-auto">
                         <h3 className="font-bold mb-4 lg:text-2xl text-xl">Before you go check<br /> these links</h3>
 
-                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:gap-36 gap-10 justify-center">
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:gap-36 gap-10 justify-center">
                             <ul className="flex flex-col space-y-2">
                                 <li className="font-sans lg:text-lg">Product</li>
                                 <li><a href="#" className="hover:underline font-sans font-thin">Streaming</a></li>

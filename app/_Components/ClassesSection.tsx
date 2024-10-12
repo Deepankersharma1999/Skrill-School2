@@ -129,7 +129,7 @@ const ClassesSection = () => {
 
                 {/* Active Tab Indicator */}
                 <div className="relative mx-auto max-w-5xl">
-                    <div className="bg-black h-[2px] w-full absolute bottom-0 left-0 z-0 mx-auto xl:ms-8 lg:ms-10 ms-5" />
+                    <div className="bg-[#7e7e7e] h-[1px] w-full absolute bottom-0 left-0 z-0 mx-auto xl:ms-8 lg:ms-10 ms-5" />
                     <div className="relative bottom-0 left-[-5px] w-full h-[2px] bg-transparent flex mx-auto">
                         <div
                             className="absolute h-[5px] mt-[-1px] bg-orange-500 transition-all duration-300 ease-in-out rounded-full"
@@ -159,9 +159,9 @@ const ClassesSection = () => {
                                         className="w-full bg-cover rounded-3xl border-[#f5f5f5] border-[2px]"
                                     />
                                     <CardContent className="p-0 mt-4">
-                                        <h3 className="xl:text-xl lg:text-lg font-semibold text-left font-bricolage">{classItem.title}</h3>
+                                        <h3 className="xl:text-xl lg:text-lg font-medium text-left font-bricolage">{classItem.title}</h3>
                                     </CardContent>
-                                    <CardFooter className="flex justify-between items-center mt-auto pr-4 pl-0">
+                                    <CardFooter className="flex justify-between items-center mt-5 pr-4 pl-0">
                                         <div className="flex items-center gap-2">
                                             <div className="flex items-center -space-x-4">
                                                 {[...Array(3)].map((_, index) => (
@@ -176,7 +176,7 @@ const ClassesSection = () => {
                                                     </div>
                                                 ))}
                                             </div>
-                                            <span className="xl:text-lg lg:text-[10px] font-semibold">+{classItem.members} members</span>
+                                            <span className="xl:text-sm lg:text-[10px]">+{classItem.members} members</span>
                                         </div>
                                         <a
                                             href={`/classes/${classItem.id}`}
@@ -193,7 +193,7 @@ const ClassesSection = () => {
             </Tabs>
 
             {/* Show More Button */}
-            <div className="mt-20 ">
+            <div className="mt-10 ">
                 <Button
                     className="hover:bg-o hover:text-white bg-o rounded-full text-white py-6 px-5 font-normal lg:text-lg text-sm"
                     onClick={handleShowMore}

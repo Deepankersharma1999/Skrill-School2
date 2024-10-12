@@ -41,9 +41,9 @@ const LearningGets = () => {
                 <div className="flex">
                     <p className='lg:text-5xl font-semibold mt-5 lg:px-0 px-5 font-bricolage'>Learning That Gets<br />You to the top</p>
                 </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-10 lg:px-0 px-5">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-4 mt-10">
                     {cardData.map(card => (
-                        <Card key={card.id} className="rounded-3xl flex flex-col justify-between border-[#858585] border-[1px] p-2 shadow-none">
+                        <Card key={card.id} className="rounded-3xl flex flex-col justify-between border-[#858585] border-[1px] shadow-none">
                             <CardHeader>
                                 <div className="flex justify-between lg:gap-6 items-center">
                                     <p className="font-semibold lg:text-lg text-base font-bricolage">
@@ -80,7 +80,7 @@ const LearningGets = () => {
                 </div>
 
 
-                <div className="lg:max-w-[1920px] px-20 mx-auto border-2 lg:rounded-full rounded-xl flex lg:flex-row flex-col justify-center lg:gap-20 py-14 mt-10 font-bricolage border-[#c0c0c0] border-1.2">
+                <div className="lg:max-w-[1920px] px-20 mx-auto border-2 lg:rounded-full rounded-xl flex lg:flex-row flex-col justify-center lg:gap-20 py-10 mt-10 font-bricolage border-[#c0c0c0] border-1.2">
                     {[
                         { value: "50K+", label: "Professionals Trained" },
                         { value: "25+", label: "Years of Experience" },

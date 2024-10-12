@@ -25,7 +25,7 @@ const Hero = () => {
                         Launch Your<br />
                         Career
                     </p>
-                    <p className="lg:text-lg text-[8px] font-thin text-[#585858] lg:mt-3 lg:p-0 ">
+                    <p className="lg:text-lg text-[8px] font-thin text-[#a3a3a3] lg:mt-3 lg:p-0 ">
                         At Skrill School, we’re dedicated to helping aspiring<br />
                         developers like you master the most in-demand<br />
                         programming skills and technologies.
@@ -33,7 +33,7 @@ const Hero = () => {
 
                     <Button className="lg:mt-5 mt-5 lg:text-lg mx-auto flex justify-center bg-o hover:bg-orange-500 rounded-full lg:py-6 lg:px-6 font-medium text-white text-xs">
                         Enroll Now
-                        <Icons.ChevronRight size={17} />
+                        <Icons.ChevronRight className='ms-4' size={17} />
                     </Button>
                 </div>
             </div>

@@ -2,6 +2,7 @@ import { InstagramLogoIcon, LinkedInLogoIcon } from '@radix-ui/react-icons';
 import React from 'react';
 import { RiFacebookFill } from 'react-icons/ri';
 import { Icons } from './icons';
+import { Button } from './ui/button';
 
 const Footer = () => {
     return (
@@ -24,13 +25,12 @@ const Footer = () => {
                         research and product feedback.
                     </p>
                     <div className="flex justify-center space-x-4 mt-5">
-                        <button className="lg:text-xl text-sm bg-white text-o px-4 py-2 rounded-md hover:bg-orange-500 hover:text-white transition duration-300">Try free now</button>
-                        <button className="lg:text-xl text-sm bg-black text-white px-4 py-2 rounded-md hover:bg-gray-700 transition duration-300">Schedule a call now</button>
+                        <Button className="lg:text-sm text-sm bg-white text-o px-4 py-2 rounded-md hover:bg-orange-500 hover:text-black text-black  transition duration-300 flex gap-2">Try free now <Icons.MoveRight /></Button>
+                        <Button className="lg:text-sm text-sm bg-black text-white px-4 py-2 rounded-md hover:bg-gray-700 transition duration-300">Schedule a call now</Button>
                     </div>
                 </div>
 
                 <div className="mx-auto flex flex-col lg:flex-row justify-between max-w-5xl items-center mt-10 z-10 gap-10">
-                    {/* bottom left div */}
                     <div className="flex flex-col gap-5 justify-center bg-orange-500 p-5 rounded-[25px] w-full lg:w-auto">
                         <h3 className="font-bold mb-4 lg:text-2xl text-xl">Before you go check<br /> these links</h3>
 

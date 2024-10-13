@@ -25,8 +25,8 @@ const Footer = () => {
                         research and product feedback.
                     </p>
                     <div className="flex justify-center space-x-4 mt-5">
-                        <Button className="lg:text-sm text-sm bg-white text-o px-4 py-2 rounded-md hover:bg-orange-500 hover:text-black text-black  transition duration-300 flex gap-2">Try free now <Icons.MoveRight /></Button>
-                        <Button className="lg:text-sm text-sm bg-black text-white px-4 py-2 rounded-md hover:bg-gray-700 transition duration-300">Schedule a call now</Button>
+                        <Button className="lg:text-sm text-sm bg-white text-o xl:px-4 px-1 py-5 rounded-md hover:bg-orange-500 hover:text-black text-black  transition duration-300 flex gap-2">Try free now <Icons.MoveRight /></Button>
+                        <Button className="lg:text-sm text-sm bg-black text-white xl:px-4 px-1 py-5 rounded-md hover:bg-gray-700 transition duration-300">Schedule a call now</Button>
                     </div>
                 </div>
 
@@ -67,13 +67,13 @@ const Footer = () => {
                         </div>
                         <div className="flex justify-center space-x-3 rounded-[25px]">
                             <a href="#" className="hover:text-gray-300 bg-orange-500 p-4 rounded-xl">
-                                <RiFacebookFill className="size-20 text-white" />
+                                <RiFacebookFill className="xl:size-20 text-white" />
                             </a>
                             <a href="#" className="hover:text-gray-300 bg-orange-500 p-4 rounded-xl">
-                                <InstagramLogoIcon className="size-20 text-white" />
+                                <InstagramLogoIcon className="xl:size-20 text-white" />
                             </a>
                             <a href="#" className="hover:text-gray-300 bg-orange-500 p-4 rounded-xl">
-                                <LinkedInLogoIcon className="size-20 text-white" />
+                                <LinkedInLogoIcon className="xl:size-20 text-white" />
                             </a>
                         </div>
                     </div>

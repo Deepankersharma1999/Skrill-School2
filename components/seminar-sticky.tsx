@@ -41,7 +41,6 @@ const formSchema = z.object({
     .max(10, { message: "Invalid Number!" })
     .regex(phoneRegex, "Invalid Number!"),
 
-  course: z.string().min(2).max(50),
 
 });
 export default function SeminarSticky() {
@@ -54,7 +53,6 @@ export default function SeminarSticky() {
       name: "",
       email: "",
       phone: "",
-      course: "",
     },
   });
 

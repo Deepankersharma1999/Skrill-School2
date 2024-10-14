@@ -42,7 +42,7 @@ export async function getSheetData(values: FormValues) {
 
     const sheets = google.sheets({ version: "v4", auth });
 
-    const data = await sheets.spreadsheets.values.append({
+   await sheets.spreadsheets.values.append({
       spreadsheetId: "1aA5SbGjfwY9n200sjN9Ws3186PhV86F5_M-IKyXxKBg",
       range: "Sheet1!A:C",
       valueInputOption: "RAW",
@@ -51,11 +51,8 @@ export async function getSheetData(values: FormValues) {
       },
     });
 
-    return {
-      status: true,
-      data, // returning the API response
-    };
-    } catch (err) {
+    return { status: true };
+  } catch (err) {
     console.error(err);
     return {
       status: false,

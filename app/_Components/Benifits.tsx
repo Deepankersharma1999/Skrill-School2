@@ -29,12 +29,11 @@ const Benifits = () => {
                     </div>
 
                     <div className="flex lg:flex-row flex-col justify-center xl:gap-10 lg:gap-10 bg-[#220D00] rounded-[35px] mt-10 lg:mt-20 w-full p-12">
-                        {/* Left Side */}
                         <div className="w-full">
                             <p className='lg:text-4xl md:text-3xl text-2xl font-semibold text-white font-bricolage'>
                                 Ultimate Revision<br /> Course for JEE<br /> MAIN - <span className='text-o'>2025</span>
                             </p>
-                            <p className='lg:text-xl md:text-xl text-lg text-[#b8b7b7] mt-6 lg:mt-20 max-w-lg'>
+                            <p className='lg:text-xl md:text-xl text-lg text-[#b8b7b7] mt-6 lg:mt-28 max-w-lg'>
                                 Revise Smarter, Score Higher with<br /> Expert mentors in Competishun JEE<br /> 2025 Made Easy
                             </p>
                             <div className="max-w-lg lg:mt-8">
@@ -44,12 +43,11 @@ const Benifits = () => {
                             </div>
                         </div>
 
-                        {/* Right Side */}
                         <div className="p-5 lg:p-10 w-full border bg-o px-5 lg:px-7 py-4 rounded-[35px]  max-w-full">
-                            <Button className='bg-[#421900] p-4 lg:p-5 py-6 lg:py-8 rounded-lg font-semibold text-lg lg:text-xl text-white mx-auto flex justify-center'>
+                            <Button className='bg-[#421900] p-4 lg:p-5 py-6 lg:py-5 rounded-lg font-semibold text-lg lg:text-xl text-white mx-auto flex justify-center'>
                                 Course Fees
                             </Button>
-                            <p className='font-semibold xl:text-[50px] lg:text-[45px]  text-white mx-auto flex justify-center mt-6 lg:mt-10'>
+                            <p className='font-semibold xl:text-[70px] lg:text-[45px]  text-white mx-auto flex justify-center mt-6 lg:mt-10'>
                                 ₹ 2999
                             </p>
                             <div className="flex justify-center px-0 ">

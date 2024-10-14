@@ -28,7 +28,7 @@ const Benifits = () => {
                         </p>
                     </div>
 
-                    <div className="flex lg:flex-row flex-col justify-center xl:gap-10 lg:gap-10 bg-[#220D00] rounded-[25px] mt-10 lg:mt-20 w-full p-12">
+                    <div className="flex lg:flex-row flex-col justify-center xl:gap-10 lg:gap-10 bg-[#220D00] rounded-[35px] mt-10 lg:mt-20 w-full p-12">
                         {/* Left Side */}
                         <div className="w-full">
                             <p className='lg:text-4xl md:text-3xl text-2xl font-semibold text-white font-bricolage'>
@@ -45,7 +45,7 @@ const Benifits = () => {
                         </div>
 
                         {/* Right Side */}
-                        <div className="p-5 lg:p-10 w-full border bg-o px-5 lg:px-7 py-4 rounded-[25px]  max-w-full">
+                        <div className="p-5 lg:p-10 w-full border bg-o px-5 lg:px-7 py-4 rounded-[35px]  max-w-full">
                             <Button className='bg-[#421900] p-4 lg:p-5 py-6 lg:py-8 rounded-lg font-semibold text-lg lg:text-xl text-white mx-auto flex justify-center'>
                                 Course Fees
                             </Button>

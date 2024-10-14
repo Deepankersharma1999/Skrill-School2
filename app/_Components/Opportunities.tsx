@@ -29,7 +29,7 @@ const Opportunities = () => {
                                 {/* Vertical line with circles */}
                                 <div className="relative">
                                     <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-px bg-black z-0"
-                                        style={{ height: 'calc(100% + -10px)' }}
+                                        style={{ height: 'calc(100% + -12px)' }}
                                     ></div>
                                     <div className="relative z-10">
                                         <div className="flex flex-col items-center space-y-24 lg:space-y-32 xl:space-y-32">

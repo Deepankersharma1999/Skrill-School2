@@ -34,26 +34,26 @@ const Footer = () => {
                     <div className="flex flex-col gap-5 justify-center bg-orange-500 p-5 rounded-[25px] w-full lg:w-auto">
                         <h3 className="font-bold mb-4 lg:text-2xl text-xl">Before you go check<br /> these links</h3>
 
-                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:gap-36 gap-10 justify-center">
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:gap-28 gap-10 justify-center">
                             <ul className="flex flex-col space-y-2">
                                 <li className="font-sans lg:text-lg">Product</li>
-                                <li><a href="#" className="hover:underline font-sans font-thin">Streaming</a></li>
-                                <li><a href="#" className="hover:underline font-sans font-thin">Human Transcription</a></li>
-                                <li><a href="#" className="hover:underline font-sans font-thin">Insights</a></li>
-                                <li><a href="#" className="hover:underline font-sans font-thin">Languages</a></li>
+                                <li><a href="#" className="hover:underline font-sans font-medium text-[12px]">Streaming</a></li>
+                                <li><a href="#" className="hover:underline font-sans font-medium text-[12px]">Human Transcription</a></li>
+                                <li><a href="#" className="hover:underline font-sans font-medium text-[12px]">Insights</a></li>
+                                <li><a href="#" className="hover:underline font-sans font-medium text-[12px]">Languages</a></li>
                             </ul>
 
                             <ul className="flex flex-col space-y-2">
                                 <li className="font-sans lg:text-lg">Get Started</li>
-                                <li><a href="#" className="hover:underline font-sans font-thin">Help Center</a></li>
-                                <li><a href="#" className="hover:underline font-sans font-thin">Sign up</a></li>
+                                <li><a href="#" className="hover:underline font-sans font-medium text-[12px]">Help Center</a></li>
+                                <li><a href="#" className="hover:underline font-sans font-medium text-[12px]">Sign up</a></li>
                             </ul>
 
                             <ul className="flex flex-col space-y-2">
                                 <li className="font-sans lg:text-lg">Company</li>
-                                <li><a href="#" className="hover:underline font-sans font-thin">About Meetbot</a></li>
-                                <li><a href="#" className="hover:underline font-sans font-thin">Blog</a></li>
-                                <li><a href="#" className="hover:underline font-sans font-thin">Security and privacy</a></li>
+                                <li><a href="#" className="hover:underline font-sans font-medium text-[12px]">About Meetbot</a></li>
+                                <li><a href="#" className="hover:underline font-sans font-medium text-[12px]">Blog</a></li>
+                                <li><a href="#" className="hover:underline font-sans font-medium text-[12px]">Security and privacy</a></li>
                             </ul>
                         </div>
                     </div>

@@ -28,7 +28,7 @@ const Benifits = () => {
                         </p>
                     </div>
 
-                    <div className="flex lg:flex-row flex-col justify-center gap-6 bg-[#220D00] rounded-[25px] mt-10 lg:mt-20 w-full p-12">
+                    <div className="flex lg:flex-row flex-col justify-center xl:gap-10 lg:gap-10 bg-[#220D00] rounded-[25px] mt-10 lg:mt-20 w-full p-12">
                         {/* Left Side */}
                         <div className="w-full">
                             <p className='lg:text-4xl md:text-3xl text-2xl font-semibold text-white font-bricolage'>
@@ -49,24 +49,24 @@ const Benifits = () => {
                             <Button className='bg-[#421900] p-4 lg:p-5 py-6 lg:py-8 rounded-lg font-semibold text-lg lg:text-xl text-white mx-auto flex justify-center'>
                                 Course Fees
                             </Button>
-                            <p className='font-semibold lg:text-[50px] text-[60px] md:text-[80px] text-white mx-auto flex justify-center mt-6 lg:mt-10'>
+                            <p className='font-semibold xl:text-[50px] lg:text-[45px]  text-white mx-auto flex justify-center mt-6 lg:mt-10'>
                                 ₹ 2999
                             </p>
-                            <div className="flex justify-center">
+                            <div className="flex justify-center px-0 ">
                                 <div>
-                                    <p className="mt-3 lg:mt-5 flex items-center gap-2 text-white text-sm lg:text-md">
+                                    <p className="mt-3 lg:mt-5 flex items-center gap-2 text-white text-sm lg:text-lg">
                                         <span><Icons.check className="text-o lg:h-5 lg:w-5 h-4 w-4 bg-white rounded-full" /></span>
                                         Achieve 97+ percentile in any JEE MAIN 2025.
                                     </p>
-                                    <p className="mt-3 lg:mt-5 flex items-center gap-2 text-white text-sm lg:text-md">
+                                    <p className="mt-3 lg:mt-5 flex items-center gap-2 text-white text-sm lg:text-lg">
                                         <span><Icons.check className="text-o lg:h-5 lg:w-5 h-4 w-4 bg-white rounded-full" /></span>
                                         Secure a rank under 25,000 in JEE Advanced.
                                     </p>
-                                    <p className="mt-3 lg:mt-5 flex items-center gap-2 text-white text-sm lg:text-md">
+                                    <p className="mt-3 lg:mt-5 flex items-center gap-2 text-white text-sm lg:text-lg">
                                         <span><Icons.check className="text-o lg:h-5 lg:w-5 h-4 w-4 bg-white rounded-full" /></span>
                                         ₹2459 will be refunded upon meeting these criteria.
                                     </p>
-                                    <p className="mt-3 lg:mt-5 flex items-center gap-2 text-white text-sm lg:text-md">
+                                    <p className="mt-3 lg:mt-5 flex items-center gap-2 text-white text-sm lg:text-lg">
                                         <span><Icons.check className="text-o lg:h-5 lg:w-5 h-4 w-4 bg-white rounded-full" /></span>
                                         Refund applies only to students of this course.
                                     </p>

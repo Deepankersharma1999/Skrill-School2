@@ -28,7 +28,7 @@ const classesData: Record<string, ClassData[]> = {
         { id: '2', title: "Marketing: Strategies for Digital Success", image: "/class2.svg", members: 90 },
         { id: '3', title: "Financial Analysis: Understanding Financial Statements", image: "/class3.svg", members: 110 },
     ],
-    AI_ML: [
+    "AI&ML": [
         { id: '1', title: "AI/ML: Understanding Machine Learning and AI Concepts", image: "/opp2.svg", members: 200 },
         { id: '2', title: "Data Mining: Techniques for Extracting Information", image: "/opp2.svg", members: 160 },
         { id: '3', title: "Deep Learning: Neural Networks in Action", image: "/opp2.svg", members: 180 },

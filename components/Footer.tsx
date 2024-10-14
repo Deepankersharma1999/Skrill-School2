@@ -6,7 +6,7 @@ import { Button } from './ui/button';
 
 const Footer = () => {
     return (
-        <div className="lg:px-20 px-5 max-w-[1920px] mx-auto py-10">
+        <div className="lg:px-40 px-5 max-w-[1920px] mx-auto py-12">
             <footer className="bg-o text-white relative rounded-[50px] mx-auto mt-20 py-20 z-0 overflow-hidden lg:p-10 p-5">
                 <div
                     className="absolute top-[-160px] right-[-200px] lg:w-[400px] h-[400px] bg-cover opacity-75 hidden lg:block"

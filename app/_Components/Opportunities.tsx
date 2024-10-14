@@ -5,12 +5,13 @@ const Opportunities = () => {
     return (
         <div className="bg-[#FFF6F2] w-full relative top-[-100px] z-40 py-10 lg:mt-0 mt-40">
 
-            <div className="flex flex-col  items-center mx-auto xl:px-20 px-6 py-8 lg:py-40 lg:mt-[-100px] mt-5 ">
-                <div className="flex flex-col lg:flex-row gap-10 lg:gap-16 ">
+            <div className="flex flex-col  items-center mx-auto xl:px-20 px-6 py-8 lg:py-44 lg:mt-[-100px] mt-10 ">
+
+                <div className="flex flex-col lg:flex-row gap-10 xl:gap-56 justify-center items-center mx-auto">
 
                     {/* Left Section */}
-                    <div className="flex flex-col ">
-                        <div className="max-w-lg">
+                    <div className="flex flex-col">
+                        <div className="">
                             <div className="p">
                                 <Image
                                     src="/up.svg"
@@ -79,29 +80,29 @@ const Opportunities = () => {
                     </div>
 
                     {/* Right Section */}
-                    <div className="text-center lg:text-left text-sm lg:text-base text-[#818181] mt-10 lg:mt-20  max-w-[700px] ">
+                    <div className="text-center lg:text-left text-sm lg:text-base text-[#818181]">
 
-                        <div className="mt-40 xl:mt-20 relative flex justify-center max-w-xl">
-                            <div className="absolute top-[-200px] w-full max-w-sm xl:ms-6 lg:ms-4  gap-20">
-                                <p className='max-w-xl text-sm  mx-auto py-10'>
+                        <div className="mt-56 xl:mt-20 relative flex justify-center">
+                            <div className="absolute top-[-250px] w-full max-w-sm xl:ms-6 lg:ms-4 gap-20">
+                                <p className='max-w-xl text-sm mx-auto py-10'>
                                     At Skrill School, we’re dedicated to helping aspiring developers like you master the most in-demand programming skills and technologies.
                                 </p>
                                 {/* Orange Box */}
-                                <div className="bg-o lg:h-32 h-28 max:w-[400px]  w-full flex justify-center gap-4 lg:gap-10 items-center text-white rounded-xl px-4 py-4 lg:mt-0">
+                                <div className="bg-o xl:h-24 lg:h-0 xl:w-[420px] flex justify-center gap-4 lg:gap-10 items-center text-white rounded-xl xl:px-4 lg:px-4 xl:py-4 py-10 lg:mt-[50px]">
                                     <div className="flex items-center gap-2">
-                                        <div className="font-semibold xl:text-5xl text-2xl">10</div>
-                                        <div className="lg:text-xl text-sm font-mono">YEARS<br />EXPERIENCE</div>
+                                        <div className="font-semibold xl:text-5xl lg:text-xl text-sm">10</div>
+                                        <div className="xl:text-lg lg:text-xs font-extralight">YEARS<br />EXPERIENCE</div>
                                     </div>
 
                                     <div className="flex items-center gap-2">
-                                        <div className="font-semibold xl:text-5xl text-2xl">50+</div>
-                                        <div className="lg:text-xl text-sm font-mono">COURSE<br />TYPES</div>
+                                        <div className="font-semibold xl:text-5xl lg:text-xl text-sm">50+</div>
+                                        <div className="xl:text-lg lg:text-xs font-extralight">COURSE<br />TYPES</div>
                                     </div>
                                 </div>
                             </div>
 
                             <Image
-                                className='w-full '
+                                className='w-full'
                                 src="/opp2.svg"
                                 width={90}
                                 height={200}
@@ -111,6 +112,7 @@ const Opportunities = () => {
                     </div>
 
                 </div>
+
             </div>
         </div>
     );

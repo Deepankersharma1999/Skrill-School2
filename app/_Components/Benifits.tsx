@@ -6,8 +6,8 @@ import React from 'react'
 const Benifits = () => {
     return (
         <div>
-            <div className='py-10'>
-                <div className="max-w-[1920px] mx-auto lg:mt-10 lg:px-40 px-2">
+            <div className='p-10'>
+                <div className="max-w-[1450px] mx-auto lg:mt-10 lg:px-36 px-2">
                     <div className="flex justify-center ">
                         <Image
                             src="/up.svg"
@@ -28,16 +28,16 @@ const Benifits = () => {
                         </p>
                     </div>
 
-                    <div className="flex lg:flex-row flex-col justify-center gap-6 bg-[#220D00] p-4 rounded-[40px] lg:rounded-[50px] mt-10 lg:mt-20 w-full ">
+                    <div className="flex lg:flex-row flex-col justify-center gap-6 bg-[#220D00] rounded-[25px] mt-10 lg:mt-20 w-full p-12">
                         {/* Left Side */}
-                        <div className="lg:p-10 p-5 w-full">
+                        <div className="w-full">
                             <p className='lg:text-4xl md:text-3xl text-2xl font-semibold text-white font-bricolage'>
                                 Ultimate Revision<br /> Course for JEE<br /> MAIN - <span className='text-o'>2025</span>
                             </p>
-                            <p className='lg:text-2xl md:text-xl text-lg text-[#b8b7b7] mt-6 lg:mt-10 max-w-lg'>
-                                Revise Smarter, Score Higher with Expert mentors in Competishun JEE 2025 Made Easy
+                            <p className='lg:text-xl md:text-xl text-lg text-[#b8b7b7] mt-6 lg:mt-20 max-w-lg'>
+                                Revise Smarter, Score Higher with<br /> Expert mentors in Competishun JEE<br /> 2025 Made Easy
                             </p>
-                            <div className="max-w-lg lg:mt-5">
+                            <div className="max-w-lg lg:mt-8">
                                 <Button className='bg-o text-white py-6 lg:py-8 mt-5 text-lg lg:text-xl rounded-lg lg:rounded-xl w-full h-16 lg:h-20'>
                                     Join Now
                                 </Button>
@@ -45,7 +45,7 @@ const Benifits = () => {
                         </div>
 
                         {/* Right Side */}
-                        <div className="p-5 lg:p-10 w-full border bg-o px-5 lg:px-7 py-4 rounded-[40px] lg:rounded-[50px] max-w-full">
+                        <div className="p-5 lg:p-10 w-full border bg-o px-5 lg:px-7 py-4 rounded-[25px]  max-w-full">
                             <Button className='bg-[#421900] p-4 lg:p-5 py-6 lg:py-8 rounded-lg font-semibold text-lg lg:text-xl text-white mx-auto flex justify-center'>
                                 Course Fees
                             </Button>

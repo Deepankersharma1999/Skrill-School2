@@ -18,7 +18,7 @@ const Footer = () => {
                     style={{ backgroundImage: "url('/footer.svg')" }}
                 ></div>
 
-                <div className="relative text-center mb-8 lg:max-w-3xl w-full mx-auto bg-orange-500 px-5 py-10 rounded-[25px] z-10" style={{ backgroundImage: "url('/jali.svg')" }}>
+                <div className="relative text-center mb-8 lg:max-w-xl w-full mx-auto bg-orange-500 px-5 py-10 rounded-[25px] z-10" style={{ backgroundImage: "url('/jali.svg')" }}>
                     <h2 className="text-2xl lg:text-3xl font-bold mb-4">Ready to use Meetbot?</h2>
                     <p className="mt-10 text-xs lg:text-sm font-thin text-opacity-25 text-center">
                         Subscribe to read our unique perspective on all things user<br />

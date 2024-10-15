@@ -99,21 +99,21 @@ export default function Pricing() {
                 {/* top right cap */}
                 <div className="absolute top-[-100px] xl:right-[-300px] lg:right-[-200px] xl:flex lg:flex hidden">
                     <div className="relative">
-                        <Image src="/cap.svg" className="w-full xl:w-[200px]" width={10} height={10} alt="" />
+                        <Image src="/cap.svg" className="w-full xl:w-[200px]" width={10} height={10} alt="cap" />
                     </div>
                 </div>
 
                 {/* botttom left book */}
                 <div className="absolute bottom-0 xl:left-[-200px] lg:left-[-100px] xl:flex lg:flex hidden">
                     <div className="relative">
-                        <Image src="/book.svg" className="w-full xl:w-[130px]" width={10} height={10} alt="" />
+                        <Image src="/book.svg" className="w-full xl:w-[130px]" width={10} height={10} alt="BOOK" />
                     </div>
                 </div>
 
                 {/* bottom plane */}
                 <div className="absolute bottom-0 xl:right-[-200px] lg:right-[-100px] xl:flex lg:flex hidden">
                     <div className="relative">
-                        <Image src="/plan2.svg" className="w-full xl:w-[130px]" width={10} height={10} alt="" />
+                        <Image src="/plan2.svg" className="w-full xl:w-[130px]" width={10} height={10} alt="paperplane" />
                     </div>
                 </div>
             </div>

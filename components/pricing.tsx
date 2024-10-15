@@ -106,7 +106,7 @@ export default function Pricing() {
                 {/* botttom left book */}
                 <div className="absolute bottom-0 xl:left-[-200px] lg:left-[-100px] xl:flex lg:flex hidden">
                     <div className="relative">
-                        <Image src="/book.svg" className="w-full xl:w-[130px]" width={10} height={10} alt="BOOK" />
+                        <Image src="/book.svg" className="w-full xl:w-[131px]" width={10} height={10} alt="BOOK" />
                     </div>
                 </div>
 

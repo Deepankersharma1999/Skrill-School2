@@ -1,4 +1,4 @@
-import { ArrowUpRightIcon, MessageCircleMore, ChevronLeft, ChevronRight, Loader, Search, Menu, X, UserIcon, PhoneIcon, Mail, BuildingIcon, BookIcon, CaptionsIcon, Check, Clock, Calendar, MoveRight, MoveLeft, MapPin, Calculator } from "lucide-react";
+import { CheckCheck, ArrowUpRightIcon, MessageCircleMore, ChevronLeft, ChevronRight, Loader, Search, Menu, X, UserIcon, PhoneIcon, Mail, BuildingIcon, BookIcon, CaptionsIcon, Check, Clock, Calendar, MoveRight, MoveLeft, MapPin, Calculator } from "lucide-react";
 
 import { cn } from "@/lib/utils";
 
@@ -39,6 +39,7 @@ export const Icons = {
     ChevronLeft: ChevronLeft,
     MessageCircleMore: MessageCircleMore,
     ArrowUpRightIcon: ArrowUpRightIcon,
+    CheckCheck: CheckCheck,
 
     loaderCenter: CenterLoader,
 };

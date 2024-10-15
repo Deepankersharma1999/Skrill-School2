@@ -1,5 +1,4 @@
-import { Icons } from '@/components/icons'
-import { Button } from '@/components/ui/button'
+import Pricing from '@/components/pricing'
 import Image from 'next/image'
 import React from 'react'
 
@@ -28,7 +27,9 @@ const Benifits = () => {
                         </p>
                     </div>
 
-                    <div className="flex lg:flex-row flex-col justify-center xl:gap-10 lg:gap-10 bg-[#220D00] rounded-[35px] mt-10 lg:mt-20 w-full p-12">
+                    <Pricing />
+
+                    {/* <div className="flex lg:flex-row flex-col justify-center xl:gap-10 lg:gap-10 bg-[#220D00] rounded-[35px] mt-10 lg:mt-20 w-full p-12">
                         <div className="w-full">
                             <p className='lg:text-4xl md:text-3xl text-2xl font-semibold text-white font-bricolage'>
                                 Ultimate Revision<br /> Course for JEE<br /> MAIN - <span className='text-o'>2025</span>
@@ -71,7 +72,7 @@ const Benifits = () => {
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </div>

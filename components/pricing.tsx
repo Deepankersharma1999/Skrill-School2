@@ -9,11 +9,12 @@ export default function Pricing() {
 
     const handleEnrollNow = () => {
         if (activeTab === "half") {
-            window.location.href = "https://rzp.io/l/n5ttAIJH4";
-        } else if (activeTab === "others") {
-            window.location.href = "https://rzp.io/l/XKNwAO2EE";
+            window.location.href = "https://rzp.io/l/n5ttAIJH4"; // Half Payment Link
+        } else if (activeTab === "full") {
+            window.location.href = "https://rzp.io/l/XKNwAO2EE"; // Full Payment Link
         }
     };
+
 
     return (
         <section className="flex flex-col items-center py-12">
@@ -96,30 +97,27 @@ export default function Pricing() {
                         </button>
                     </div>
                 </div>
-                {/* top right cap */}
+                {/* Top Right Cap */}
                 <div className="absolute top-[-100px] xl:right-[-300px] lg:right-[-200px] xl:flex lg:flex hidden">
                     <div className="relative">
-                        <Image src="/cap.svg" className="w-full xl:w-[200px]" width={10} height={10} alt="cap" />
+                        <Image src="/cap.svg" className="w-full xl:w-[200px]" width={10} height={10} alt="Cap" />
                     </div>
                 </div>
 
-                {/* botttom left book */}
+                {/* Bottom Left Book */}
                 <div className="absolute bottom-0 xl:left-[-200px] lg:left-[-100px] xl:flex lg:flex hidden">
                     <div className="relative">
-                        <Image src="/book.svg" className="w-full xl:w-[131px]" width={10} height={10} alt="BOOK" />
+                        <Image src="/book.svg" className="w-full xl:w-[131px]" width={10} height={10} alt="Book" />
                     </div>
                 </div>
 
-                {/* bottom plane */}
+                {/* Bottom Plane */}
                 <div className="absolute bottom-0 xl:right-[-200px] lg:right-[-100px] xl:flex lg:flex hidden">
                     <div className="relative">
-                        <Image src="/plan2.svg" className="w-full xl:w-[130px]" width={10} height={10} alt="paperplane" />
+                        <Image src="/plan2.svg" className="w-full xl:w-[130px]" width={10} height={10} alt="Paper Plane" />
                     </div>
                 </div>
             </div>
-
-
-
         </section>
     );
 }

@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import clsx from "clsx";
 import { Icons } from "./icons";
 import Image from "next/image";
-
+import Book from "@/public/Book.svg"
 export default function Pricing() {
     const [activeTab, setActiveTab] = useState("half");
 
@@ -107,7 +107,7 @@ export default function Pricing() {
                 {/* Bottom Left Book */}
                 <div className="absolute bottom-0 xl:left-[-200px] lg:left-[-100px] xl:flex lg:flex hidden">
                     <div className="relative">
-                        <Image src="/book.svg" className="w-full xl:w-[131px]" width={10} height={10} alt="Book" />
+                        <Image src={Book} className="w-full xl:w-[131px]" width={10} height={10} alt="Book" />
                     </div>
                 </div>
 
